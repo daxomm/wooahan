@@ -261,7 +261,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .footer-util-area .site-area { position: absolute; bottom: 0; right: 7px; width: 327px; }
 
-.footer-util-area .site-area .btn-site { font-size: 14px; text-align: left; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; min-height: 50px; padding: 13px 16px; border: 1px solid #a6a7a9; border-radius: 8px; background: #fff; color: #000; }
+.footer-util-area .site-area .btn-site { font-size: 14px; text-align: left; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; min-height: 50px; padding: 13px 16px; border: 1px solid #a6a7a9; border-radius: 8px; background: #fff; color: #37373A; }
 
 .footer-util-area .site-area .btn-arrow { -webkit-transition: 0.2s; transition: 0.2s; }
 

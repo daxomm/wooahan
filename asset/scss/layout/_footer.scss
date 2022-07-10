@@ -37,6 +37,36 @@
         font-size: 14px;
       }
     }
+
+    @include tablet{
+      flex-wrap: wrap;
+
+      .nav-item{
+        flex: none;
+        min-width: 33.3334%;
+        margin-bottom: 40px;
+
+        &.etc{
+          color: #6c6d6f;
+          font-size: 12px;
+          line-height: 1.6666666667;
+          flex-basis: 100%;
+          margin-top: 6px;
+          padding-top: 40px;
+          border-top: 1px solid #d6d7da;
+          width: 100%;
+
+          .sub-list{
+            display: flex;
+            flex-wrap: wrap;
+
+            .sub-item{
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -44,38 +74,6 @@
   margin-top: 28px;
   display: flex;
   position: relative;
-
-  address{
-    margin-right: 345px;
-    
-    h3{
-      font-weight: 700;
-      line-height: 1.75;
-      margin-bottom: 8px;
-    }
-
-    span{
-      display: inline-block;
-      font-size: 14px;
-      line-height: 1.7142857143;
-      position: relative;
-
-      +span{
-        margin-left: 10px;
-      }
-
-      +span::before{
-        content: '';
-        position: absolute;
-        display: inline-block;
-        top: 6px;
-        left: -7px;
-        width: 1px;
-        height: 14px;
-        background: #37373a;
-      }
-    }
-  }
 
   .site-area{
     position: absolute;
@@ -159,5 +157,74 @@
         background-color: #f3f4f5;
       }
     }
+  }
+
+  address{
+    margin-right: 345px;
+    
+    h3{
+      font-weight: 700;
+      line-height: 1.75;
+      margin-bottom: 8px;
+    }
+
+    span{
+      display: inline-block;
+      font-size: 14px;
+      line-height: 1.7142857143;
+      position: relative;
+
+      +span{
+        margin-left: 10px;
+      }
+
+      +span::before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 6px;
+        left: -7px;
+        width: 1px;
+        height: 14px;
+        background: #37373a;
+      }
+    }
+  }
+
+  @include tablet{
+    display: block;
+
+    .site-area{
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    address{
+      margin-right: 0;
+
+      span{
+        display: block;
+        font-size: 12px;
+      }
+
+      span+span{
+        margin-left: 0;
+      }
+
+      span+span::before{
+        display: none;
+      }
+    }
+  }
+
+  @include mobile{
+    .site-area{}
+
+    address{}
+
   }
 }

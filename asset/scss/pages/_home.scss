@@ -9,6 +9,9 @@
     margin-top: 30px;
   }
 
+  @include mobile{
+    margin-top: 50px;
+  }
 
   .swiper{
     height: 100%;
@@ -104,6 +107,22 @@
         .menu-name{
           font-size: 14px;
         }
+
+        @include mobile {
+          .txt{
+            font-size: 15px;
+          }
+
+          .title{
+            line-height: 50px;
+            font-size: 40px;
+            margin: 35px 0;
+          }
+
+          .menu-name{
+            font-size: 13px;
+          }
+        }
       }
     }
   }
@@ -113,21 +132,8 @@
   padding-top: 160px;
   overflow: hidden;
 
-  .sc-title {
-    margin-bottom: 60px;
-
-    .title {
-      margin-bottom: 20px;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.5;
-    }
-
-    .text {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.75;
-    }
+  @include tablet {
+    padding-top: 120px;
   }
 
   .card-area {
@@ -219,16 +225,6 @@
   padding-top: 160px;
   margin-bottom: 160px;
 
-  .sc-title{
-    margin-bottom: 80px;
-
-    .text{
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.75;
-    }
-  }
-
   .video-area{
     margin-bottom: 80px;
     position: relative;
@@ -243,6 +239,7 @@
 
     video{
       width: 100%;
+      display: block;
     }
 
     &.active{
@@ -374,6 +371,11 @@
     margin: 0 auto;
 
     .news-area{
+      .news-list{
+        @include tablet{
+          margin: 0 24px;
+        }
+      }
       .news-item{
         margin-right: 40px;
         border-bottom: 1px solid #f3f4f5;
@@ -386,6 +388,10 @@
               transform: scale(1.2);
             }
           }
+        }
+
+        @include tablet{
+          margin-right: 0;
         }
       }
 
@@ -407,6 +413,7 @@
 
           p{
             margin-bottom: 16px;
+            line-height: 1.625;
           }
 
           span{
@@ -416,6 +423,29 @@
             font-weight: 400;
             line-height: 1.7142857143;
           }
+
+          @include tablet{
+
+            h3{
+              max-height: 52px;
+              margin-bottom: 5px;
+              font-size: 16px;
+              line-height: 1.625;
+            }
+
+            p{
+              margin-bottom: 8px;
+            }
+
+            span{
+              font-size: 12px;
+              line-height: 1.6666666667;
+            }
+          }
+        }
+
+        @include tablet{
+          padding: 30px 0;
         }
       }
 
@@ -431,12 +461,22 @@
           object-fit: cover;
           transition: 0.3s;
         }
+
+        @include tablet {
+          width: 100px;
+          height: 80px;
+          margin-right: 16px;
+        }
       }
     }
   }
 
   .btn-news{
     margin: 40px auto 0;
+
+    @include tablet{
+      margin-top: 60px;
+    }
   }
 }
 
@@ -444,17 +484,6 @@
   overflow: hidden;
   padding: 120px 0 136px;
   background-color: #232324;
-
-  .sc-title{
-    margin-bottom: 60px;
-    color: #fff;
-
-    p{
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.75;
-    }
-  }
 
   .font-area{
     animation: rolling 20s infinite linear;

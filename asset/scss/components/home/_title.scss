@@ -1,19 +1,48 @@
 .sc-title{
-  font-size: 20px;
-  line-height: 29px;
-  color: #333;
-  letter-spacing: -0.05em;
-  font-weight: 700;
+  padding: 0 24px;
+  text-align: center;
+  word-break: keep-all;
+
+  h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    @include tablet{
+      font-size: 30px;
+      line-height: 1.4;
+    }
+  }
+
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+  }
 
   .sc-best &{
     padding: 50px 16px 22px;
+  }
+
+  .sc-story &{
+    margin-bottom: 60px;
   }
 
   .sc-new &{
     padding: 50px 16px 22px;
   }
 
+  .sc-service &{
+    margin-bottom: 80px;
+  }
+
   .sc-category &{
     padding: 30px 0;
+  }
+
+  .sc-font &{
+    color: #fff;
+    margin-bottom: 60px;
   }
 }

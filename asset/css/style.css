@@ -390,6 +390,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-story .link-card figure figcaption h3 { padding-right: 15px; color: #fff; font-size: 16px; font-weight: 700; line-height: 1.625; text-overflow: ellipsis; white-space: pre-line; }
 
+.sc-story .link-card:hover figure { overflow: hidden; }
+
 .sc-story .link-card:hover figure img { -webkit-transform: scale(1.2); transform: scale(1.2); }
 
 .sc-service { padding-top: 160px; margin-bottom: 160px; }

@@ -316,7 +316,7 @@
     background-position: 50% 50%;
     background-size: cover;
 
-    @include tablet{
+    @include mobile{
       background: url(../images/bg/green_bg_m.jpg) no-repeat;
       position: absolute;
       top: 0;

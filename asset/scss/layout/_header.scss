@@ -286,8 +286,6 @@
   }
 
   .logo-area{
-    position: fixed;
-    top: 0;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
@@ -334,7 +332,6 @@
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 50px;
 
     .menu-list{
       display: block;

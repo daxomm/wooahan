@@ -163,7 +163,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .side-area::-webkit-scrollbar-thumb { border-radius: 2.5px; background-color: rgba(0, 0, 0, 0.15); height: 130px; }
 
-.side-area .logo-area { position: fixed; top: 0; padding: 0 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 50px; background: #fff; }
+.side-area .logo-area { padding: 0 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 50px; background: #fff; }
 
 .side-area .logo-area .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -177,7 +177,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .side-area .inner { height: auto; padding: 0 40px; }
 
-.side-area .top-area { display: block; width: 100%; height: auto; margin-top: 50px; }
+.side-area .top-area { display: block; width: 100%; height: auto; }
 
 .side-area .top-area .menu-list { display: block; width: 100%; height: auto; }
 
@@ -425,6 +425,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 .sc-green { position: relative; height: 680px; }
 
 .sc-green .img-box { background: url(../images/bg/green_bg.jpg) no-repeat; position: absolute; top: 0; right: 0; bottom: 0; left: 0; min-height: 100%; background-attachment: fixed; background-position: 50% 50%; background-size: cover; }
+
+@media (max-width: 1023px) { .sc-green .img-box { background: url(../images/bg/green_bg_m.jpeg) no-repeat; } }
 
 .sc-green .text-box { position: absolute; top: 50%; left: 50%; width: 100%; color: #fff; text-align: center; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 

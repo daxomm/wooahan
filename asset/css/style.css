@@ -382,15 +382,13 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-story .link-card { width: 100%; height: 100%; }
 
-.sc-story .link-card figure { width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 10%; }
+.sc-story .link-card figure { width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 10%; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); isolation: isolate; }
 
 .sc-story .link-card figure img { border-radius: 10%; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -webkit-filter: brightness(70%); filter: brightness(70%); -webkit-transition: 0.3s; transition: 0.3s; /* border: 1px solid #e5e5e5; */ }
 
 .sc-story .link-card figure figcaption { position: absolute; bottom: 15px; left: 15px; }
 
 .sc-story .link-card figure figcaption h3 { padding-right: 15px; color: #fff; font-size: 16px; font-weight: 700; line-height: 1.625; text-overflow: ellipsis; white-space: pre-line; }
-
-.sc-story .link-card:hover figure { border-radius: 10%; }
 
 .sc-story .link-card:hover figure img { -webkit-transform: scale(1.2); transform: scale(1.2); }
 

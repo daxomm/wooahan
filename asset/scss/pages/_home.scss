@@ -180,6 +180,11 @@
       position: relative;
       overflow: hidden;
       border-radius: 10%;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      isolation: isolate;
 
       img {
         border-radius: 10%;
@@ -210,8 +215,6 @@
 
     &:hover {
       figure {
-        border-radius: 10%;
-
         img {
           transform: scale(1.2);
         }

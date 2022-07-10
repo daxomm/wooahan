@@ -180,10 +180,6 @@
       position: relative;
       overflow: hidden;
       border-radius: 10%;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
       isolation: isolate;
 
       img {
@@ -193,7 +189,6 @@
         object-fit: cover;
         filter: brightness(70%);
         transition: 0.3s;
-        /* border: 1px solid #e5e5e5; */
       }
 
       figcaption {
@@ -330,7 +325,6 @@
       background-attachment: fixed;
       background-position: 50% 50%;
       background-size: cover;
-      max-width: 320px;
       height: auto;
     }
   }

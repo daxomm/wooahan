@@ -1,0 +1,28 @@
+.sc-title{
+  padding: 0 24px;
+  text-align: center;
+  word-break: keep-all;
+
+  h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  padding: 0 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+  vertical-align: top;
+  border-radius: 8px;
+  width: 94px;
+  cursor: pointer;
+  background-color: #f3f4f5;
+}

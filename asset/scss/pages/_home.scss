@@ -151,10 +151,6 @@
           transform: translateX(-2800px);
         }
       }
-
-      &:hover{
-        animation-play-state: paused;
-      }
     }
   }
 
@@ -184,7 +180,6 @@
       position: relative;
       overflow: hidden;
       border-radius: 10%;
-      border: 1px solid #e5e5e5;
 
       img {
         width: 100%;
@@ -192,6 +187,7 @@
         object-fit: cover;
         filter: brightness(70%);
         transition: 0.3s;
+        /* border: 1px solid #e5e5e5; */
       }
 
       figcaption {

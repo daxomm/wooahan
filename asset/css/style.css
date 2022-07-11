@@ -428,7 +428,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-green .text-box { position: absolute; top: 50%; left: 50%; width: 100%; color: #fff; text-align: center; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.sc-green .text-box h2 { background: url(../images/icon/green_logo.png) no-repeat; background-size: 120px 40px; width: 120px; height: 40px; display: inline-block; margin: 20px 0; line-height: 1.75; }
+.sc-green .text-box h2 { background: url(../images/icon/green_logo.png) no-repeat; background-size: 120px 40px; width: 120px; height: 40px; display: inline-block; margin: 20px 0; line-height: 1.75; background: #f00; }
 
 .sc-green .text-box strong { display: block; font-size: 36px; font-weight: 700; line-height: 1.5; margin-bottom: 20px; }
 

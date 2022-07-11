@@ -317,17 +317,17 @@
 
     @include tablet{
       background: url(../images/bg/green_bg_m.jpg) no-repeat;
-      z-index: -1;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      height: 100%;
-      width: 100%;
       background-attachment: fixed;
       background-position: 50% 50%;
-      background-size: 100%;
+      background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
     }
   }
 

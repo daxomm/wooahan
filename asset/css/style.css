@@ -428,6 +428,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-green { position: relative; height: 680px; }
 
+.sc-green .bg-wrap { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+
 @media (max-width: 1023px) { .sc-green .img-wrap { clip: rect(0, auto, auto, 0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; } }
 
 .sc-green .img-box { background: url(../images/bg/green_bg.jpg) no-repeat; position: absolute; top: 0; right: 0; bottom: 0; left: 0; min-height: 100%; background-attachment: fixed; background-position: 50% 50%; background-size: cover; }
@@ -436,7 +438,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-green .text-box { position: absolute; top: 50%; left: 50%; width: 100%; color: #fff; text-align: center; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.sc-green .text-box h2 { background: #F00 url(../images/icon/green_logo.png) no-repeat; background-size: 120px 40px; width: 120px; height: 40px; display: inline-block; margin: 20px 0; line-height: 1.75; }
+.sc-green .text-box h2 { background: green url(../images/icon/green_logo.png) no-repeat; background-size: 120px 40px; width: 120px; height: 40px; display: inline-block; margin: 20px 0; line-height: 1.75; }
 
 .sc-green .text-box strong { display: block; font-size: 36px; font-weight: 700; line-height: 1.5; margin-bottom: 20px; }
 

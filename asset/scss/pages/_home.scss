@@ -297,11 +297,30 @@
       line-height: 1.75;
     }
   }
+
+  @include tablet{
+    padding-top: 120px;
+    margin-bottom: 120px;
+  }
 }
 
 .sc-green{
   position: relative;
   height: 680px;
+
+  .bg-wrap{
+  }
+
+  .img-wrap{
+    @include tablet{
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   .img-box{
     background: url(../images/bg/green_bg.jpg) no-repeat;
@@ -317,17 +336,14 @@
 
     @include tablet{
       background: url(../images/bg/green_bg_m.gif) no-repeat;
-      position: absolute;
+      position: fixed;
+      display: block;
       top: 0;
-      right: 0;
-      bottom: 0;
       left: 0;
-      background-attachment: fixed;
-      background-position: 50% 50%;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size:cover;
+      width: 100%;
+      height: 100%;
       background-size: cover;
+      background-position: center center;
     }
   }
 
@@ -341,7 +357,7 @@
     transform: translate(-50%,-50%);
 
     h2{
-      background: url(../images/icon/green_logo.png) no-repeat;
+      background: #F00 url(../images/icon/green_logo.png) no-repeat;
       background-size: 120px 40px;
       width: 120px;
       height: 40px;

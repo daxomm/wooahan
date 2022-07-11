@@ -171,11 +171,15 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .side-area .logo-area .logo .link-logo svg { display: inline-block; height: 100%; }
 
-.side-area .logo-area .btn-close { line-height: 0; margin-right: -11px; padding: 16px; }
+.side-area .logo-area .btn-close { line-height: 0; margin-right: -16px; padding: 16px; }
 
 .side-area .logo-area .btn-close svg { width: 14px; height: 14px; display: inline-block; }
 
+@media (max-width: 767px) { .side-area .logo-area { padding: 0 24px; } }
+
 .side-area .inner { height: auto; padding: 0 40px; }
+
+@media (max-width: 767px) { .side-area .inner { padding: 0 24px; } }
 
 .side-area .top-area { display: block; width: 100%; height: auto; }
 
@@ -420,15 +424,19 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-service .small-title p { font-size: 16px; font-weight: 400; line-height: 1.75; }
 
+@media (max-width: 1023px) { .sc-service { padding-top: 120px; margin-bottom: 120px; } }
+
 .sc-green { position: relative; height: 680px; }
+
+@media (max-width: 1023px) { .sc-green .img-wrap { clip: rect(0, auto, auto, 0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; } }
 
 .sc-green .img-box { background: url(../images/bg/green_bg.jpg) no-repeat; position: absolute; top: 0; right: 0; bottom: 0; left: 0; min-height: 100%; background-attachment: fixed; background-position: 50% 50%; background-size: cover; }
 
-@media (max-width: 1023px) { .sc-green .img-box { background: url(../images/bg/green_bg_m.gif) no-repeat; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-attachment: fixed; background-position: 50% 50%; background-size: cover; } }
+@media (max-width: 1023px) { .sc-green .img-box { background: url(../images/bg/green_bg_m.gif) no-repeat; position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center center; } }
 
 .sc-green .text-box { position: absolute; top: 50%; left: 50%; width: 100%; color: #fff; text-align: center; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.sc-green .text-box h2 { background: url(../images/icon/green_logo.png) no-repeat; background-size: 120px 40px; width: 120px; height: 40px; display: inline-block; margin: 20px 0; line-height: 1.75; }
+.sc-green .text-box h2 { background: #F00 url(../images/icon/green_logo.png) no-repeat; background-size: 120px 40px; width: 120px; height: 40px; display: inline-block; margin: 20px 0; line-height: 1.75; }
 
 .sc-green .text-box strong { display: block; font-size: 36px; font-weight: 700; line-height: 1.5; margin-bottom: 20px; }
 

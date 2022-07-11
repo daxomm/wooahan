@@ -312,7 +312,7 @@
 
     .btn-close {
       line-height: 0;
-      margin-right: -11px;
+      margin-right: -16px;
       padding: 16px;
 
       svg {
@@ -321,11 +321,19 @@
         display: inline-block;
       }
     }
+
+    @include mobile{
+      padding: 0 24px;
+    }
   }
 
   .inner{
     height: auto;
     padding: 0 40px;
+
+    @include mobile{
+      padding: 0 24px;
+    }
   }
 
   .top-area{

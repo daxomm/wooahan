@@ -408,9 +408,9 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-service .video-area .control-box { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10; display: -webkit-box; display: -ms-flexbox; display: flex; display: none; }
 
-.sc-service .video-area .control-box .btn-pause { width: 50px; height: 50px; }
+.sc-service .video-area .control-box .btn-pause { width: 100%; height: 100%; }
 
-.sc-service .video-area .control-box .btn-play { width: 50px; height: 50px; display: none; }
+.sc-service .video-area .control-box .btn-play { width: 100%; height: 100%; display: none; }
 
 .sc-service .small-title { padding: 0 24px; text-align: center; word-break: keep-all; margin-bottom: 80px; }
 

@@ -316,7 +316,7 @@
     background-size: cover;
 
     @include tablet{
-      background: url(../images/bg/green_bg_m.jpg) no-repeat;
+      background: url(../images/bg/green_bg_m.gif) no-repeat;
       position: absolute;
       top: 0;
       right: 0;
@@ -324,10 +324,10 @@
       left: 0;
       background-attachment: fixed;
       background-position: 50% 50%;
-      background-size: cover;
       -o-background-size: cover;
       -moz-background-size: cover;
-      -webkit-background-size: cover;
+      -webkit-background-size:cover;
+      background-size: cover;
     }
   }
 
@@ -348,7 +348,6 @@
       display: inline-block;
       margin: 20px 0;
       line-height: 1.75;
-      background: #f00;
     }
 
     strong{

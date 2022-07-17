@@ -30,13 +30,13 @@ $('.menu-item').hover(function(){
   //사이드 메뉴 열고 닫기
   $(".header .btn-menu").click(function (e) {
     e.preventDefault();
-    $('.side-deimmed').addClass('on')
+    $('.side-deimmed').addClass('turn-on')
     $('body').addClass('overflowHidden')
     $('.side-area').addClass('on')
   })
   $(".header .logo-area").click(function (e) {
     e.preventDefault();
-    $('.side-deimmed').removeClass('on')
+    $('.side-deimmed').removeClass('turn-on')
     $('body').removeClass('overflowHidden')
     $('.side-area').removeClass('on')
   })

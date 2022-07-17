@@ -334,18 +334,15 @@
     left: 0;
     min-height: 100%;
     background-position: 50% 50%;
+    background-attachment:fixed;
     background-size: cover;
 
     @include tablet{
-      background: url(../images/bg/green_bg_m.gif) no-repeat;
-      position: fixed;
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      background: url(../images/bg/green_bg_m.gif) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
-      background-position: center center;
     }
   }
 
@@ -359,7 +356,7 @@
     transform: translate(-50%,-50%);
 
     h2{
-      background: blue url(../images/icon/green_logo.png) no-repeat;
+      background: #f00 url(../images/icon/green_logo.png) no-repeat;
       background-size: 120px 40px;
       width: 120px;
       height: 40px;

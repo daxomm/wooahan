@@ -30,13 +30,13 @@ $('.menu-item').hover(function(){
   //사이드 메뉴 열고 닫기
   $(".header .btn-menu").click(function (e) {
     e.preventDefault();
-    $('.side-deimmed').addClass('turn-on')
+    $('.side-deimmed').addClass('show')
     $('body').addClass('overflowHidden')
     $('.side-area').addClass('on')
   })
   $(".header .logo-area").click(function (e) {
     e.preventDefault();
-    $('.side-deimmed').removeClass('turn-on')
+    $('.side-deimmed').removeClass('show')
     $('body').removeClass('overflowHidden')
     $('.side-area').removeClass('on')
   })
@@ -48,6 +48,7 @@ $('.menu-item').hover(function(){
     $(this).parent().siblings('.sub-menu-list').slideToggle();
     $(this).toggleClass('on');
   });
+
 
   //메인 비주얼
 

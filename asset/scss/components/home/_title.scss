@@ -9,7 +9,7 @@
     font-weight: 700;
     line-height: 1.5;
 
-    @include tablet{
+    @include mobile{
       font-size: 30px;
       line-height: 1.4;
     }

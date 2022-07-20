@@ -315,7 +315,7 @@
   }
 
   .img-wrap{
-    @include tablet{
+    @include mobile{
       clip: rect(0, auto, auto, 0);
       position: absolute;
       top: 0;

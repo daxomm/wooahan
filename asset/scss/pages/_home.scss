@@ -337,7 +337,7 @@
     background-attachment:fixed;
     background-size: cover;
 
-    @include tablet{
+    @include mobile{
       background: url(../images/bg/green_bg_m.gif) no-repeat;
       position: fixed;
       display: block;
@@ -346,7 +346,6 @@
       width: 100%;
       height: 100%;
       background-size: cover;
-      background-attachment:scroll;
       background-position: center center;
     }
   }

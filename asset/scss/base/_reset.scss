@@ -56,6 +56,7 @@ body {
     overscroll-behavior: none;
     line-height: 1.4;
     letter-spacing: -.02em;
+    min-width: 320px;
 
     &.overflowHidden{
         overflow: hidden;
